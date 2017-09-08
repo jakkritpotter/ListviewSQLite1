@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:id="@+id/txtt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อทั่วไป : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txts_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่ออังกฤษ : "
+                android:paddingTop="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="แก้ไข" />
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:text="ลบ" />
+        </LinearLayout>
+    </TableRow>
+</LinearLayout>
